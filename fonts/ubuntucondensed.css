@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Ubuntu Condensed';
+    src: local('Ubuntu Condensed'), local('UbuntuCondensed-Regular'), url('ubuntucondensed.woff2') format('woff2'), url('ubuntucondensed.woff') format('woff'), url('ubuntucondensed.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}

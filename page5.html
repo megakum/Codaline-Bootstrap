@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bs.css">
+    <link rel="shortcut icon" type="images/x-icon" href="icon.ico"/>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <title>Бутстрап</title>
+</head>
+<body>
+<div class="page-wrapper">
+
+    <!--NAVBAR-->
+    <nav class="navbar navbar-default navbar-fixed-top" >
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="page2.html">Резюме</a></li>
+                    <li><a href="page3.html">Языки программирования</a></li>
+                    <li><a href="page4.html">HTML теги</a></li>
+                    <li class="active"><a href="#">Bootstrap</a></li>
+                </ul>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!--HEADER-->
+    <div class="container-fluid">
+        <div class="row header">
+            <p>Bootstrap</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <figure class="left">
+                <img src="images/foto.jpg" class="img-thumbnail" alt="image" width="300px"
+                     title="Моя фотогафия">
+            </figure>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <!--Создаем цепочную навигацию("хлебные крошки")-->
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-home"></i>
+                        </a>
+                    </li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Категория</a></li>
+                    <li class="active">Название поста</li>
+                </ol>
+            </div>
+            <!--Создаем второстепеннную навигацию-->
+            <div class="container"> <!--Для выравнивания с по ширине с основной навигацией, -->
+                <!--второстепенную помещаем в контейнер-->
+
+                <!--Вариант с пилсами-->
+                <!--<ul class="nav nav-pills">-->
+                <!--<li class="active">-->
+                <!--<a href="#">Элемент 1 <span class="badge">20</span></a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="#">Элемент 2 <span class="badge">14</span></a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="#">Элемент 3 <span class="badge">41</span></a>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href="#">Элемент 4 <span class="badge">25</span></a>-->
+                <!--</li>-->
+                <!--</ul>-->
+
+                <!--Вариант в табами-->
+                <ul class="nav nav-tabs">
+                    <li class="active">
+                        <a href="#">Элемент 1 <span class="badge">20</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Элемент 2 <span class="badge">14</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Элемент 3 <span class="badge">41</span></a>
+                    </li>
+                    <li>
+                        <a href="#">Элемент 4 <span class="badge">25</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Создание сетки masonry(кирпичная кладка) и подключение плагина salvattore-->
+        <div class="row masonry" data-columns>
+            <div class="item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/600x340" alt="" class="img-responsive">
+                    <div class="caption">
+                        <h3><a href="#">Название нашего поста 1</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ex ipsum iure
+                            nam non possimus praesentium, quidem tempora temporibus!Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Asperiores doloremque ex ipsum iure nam non possimus
+                            praesentium, quidem tempora temporibus!</p>
+                        <a href="#" class="btn btn-success">Подробнее <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/600x340" alt="" class="img-responsive">
+                    <div class="caption">
+                        <h3><a href="#">Название нашего поста 2</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ex ipsum iure
+                            nam non possimus praesentium, quidem tempora temporibus!</p>
+                        <a href="#" class="btn btn-success">Подробнее <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/600x340" alt="" class="img-responsive">
+                    <div class="caption">
+                        <h3><a href="#">Название нашего поста 3</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ex ipsum iure
+                            nam non possimus praesentium, quidem tempora temporibus!</p>
+                        <a href="#" class="btn btn-success">Подробнее <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/600x340" alt="" class="img-responsive">
+                    <div class="caption">
+                        <h3><a href="#">Название нашего поста 4</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ex ipsum iure
+                            nam non possimus praesentium, quidem tempora temporibus!Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Asperiores doloremque ex ipsum iure nam non possimus
+                            praesentium, quidem tempora temporibus!</p>
+                        <a href="#" class="btn btn-success">Подробнее <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/600x340" alt="" class="img-responsive">
+                    <div class="caption">
+                        <h3><a href="#">Название нашего поста 5</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ex ipsum iure
+                            nam non possimus praesentium, quidem tempora temporibus!</p>
+                        <a href="#" class="btn btn-success">Подробнее <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/600x340" alt="" class="img-responsive">
+                    <div class="caption">
+                        <h3><a href="#">Название нашего поста 6</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores doloremque ex ipsum iure
+                            nam non possimus praesentium, quidem tempora temporibus!</p>
+                        <a href="#" class="btn btn-success">Подробнее <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Постранична навигация(пагинация)-->
+        <!--nav>ul.pagination>li*4>a-->
+        <nav class="text-center">
+            <ul class="pagination "><!--pagination-lg или sm-->
+                <!--pagination-lg или sm-->
+                <li class="disabled">
+                    <a href="">
+                        <i class="fa fa-chevron-circle-left"></i>
+                        <i class="fa fa-chevron-circle-left"></i>
+                    </a>
+                </li>
+                <li class="disabled">
+                    <a href="">
+                        <i class="fa fa-chevron-circle-left"></i>
+                    </a>
+                </li>
+                <li class="active"><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">6</a></li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-chevron-circle-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-chevron-circle-right"></i>
+                        <i class="fa fa-chevron-circle-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!--Второй тип пагинации-->
+        <!--nav>ul.pager>li*2>a-->
+        <nav>
+            <ul class="pager">
+                <li class="previous disabled"><a href="#">&larr; Предыдущая страница</a></li>
+                <li class="next"><a href="#">Следующая страница &rarr;</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--ФУТЕР-->
+    <!-- Origional snipet by msurguy<http://bootsnipp.com/msurguy>, I editted his snipet so that it works with bootstrap 3.3 -->
+    <div class="container">
+        <hr>
+        <div class="row">
+            <div class="col-xs-3">
+                <ul class="list-unstyled">
+                    <li>GitHub
+                    <li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact & support</a></li>
+                    <li><a href="#">Enterprise</a></li>
+                    <li><a href="#">Site status</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-3">
+                <ul class="list-unstyled">
+                    <li>Applications
+                    <li>
+                    <li><a href="#">Product for Mac</a></li>
+                    <li><a href="#">Product for Windows</a></li>
+                    <li><a href="#">Product for Eclipse</a></li>
+                    <li><a href="#">Product mobile apps</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-3">
+                <ul class="list-unstyled">
+                    <li>Services
+                    <li>
+                    <li><a href="#">Web analytics</a></li>
+                    <li><a href="#">Presentations</a></li>
+                    <li><a href="#">Code snippets</a></li>
+                    <li><a href="#">Job board</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-3">
+                <ul class="list-unstyled">
+                    <li>Documentation
+                    <li>
+                    <li><a href="#">Product Help</a></li>
+                    <li><a href="#">Developer API</a></li>
+                    <li><a href="#">Product Markdown</a></li>
+                    <li><a href="#">Product Pages</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-8">
+                <ul class="list-unstyled list-inline pull-left">
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-4">
+                <p class="text-muted pull-right">© 2015 Company Name. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="page-buffer"></div>
+<!--Footer-->
+<footer class="footer">
+    <ul>
+        <li>&copy; 2016 Mega Company. All rights reserved.</li>
+        <li>Contact information: <a href="mailto:revasergey70@gmail.com">
+            revasergey70@gmail.com</a>.
+        </li>
+    </ul>
+
+</footer>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--Все скрипты и фреймворки можно пдключать через CDN тут https://cdnjs.com-->
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="bootstrap/js/salvattore.min.js"></script>
+</body>
+</html>
+
